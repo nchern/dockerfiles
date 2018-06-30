@@ -1,2 +1,4 @@
-# dockerfiles
-My dockerization of different applications
+A collection of different docker images I use.
+
+## TODO
+[] Publish to dockerhub
