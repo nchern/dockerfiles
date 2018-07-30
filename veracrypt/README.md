@@ -19,8 +19,8 @@ make show-alias  # shows the alias that you can customize and put into your `.ba
 After running a container you will get a shell where you can operate with veracrypt normally via command line.
 The image includes a few of convenient shotcuts to make working with veracrypt easier. See `Dockerfile` under `# Convenient shotcuts`.
 
-## Why, a brief explanation
-Veracrypt requires fuse and devicemapper - quite a low level linux features that do not work in docker container just by default. See `veracrypt.sh` how to start container properly, with enabled linux kernel modules.
+## Why can't I just run the container with mounted directory?
+Veracrypt requires fuse and devicemapper - quite low level linux features that do not work in a docker container just by default. See `veracrypt.sh` how to start container properly, with enabled linux kernel modules.
 Here is a list of errors you would see if you try to run a container simply by `docker run -ti veracrypt:latest`:
 
 Error: No such file or directory: /dev/mapper/veracrypt1
