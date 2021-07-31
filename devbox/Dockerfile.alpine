@@ -1,0 +1,15 @@
+FROM golang:1.15-alpine
+
+RUN apk update && apk add \
+    zip  \
+    curl \
+    git \
+    python3 \
+    jq \
+    vim \
+    build-base
+
+WorkDir /root
+
+
+# vi:ft=dockerfile
